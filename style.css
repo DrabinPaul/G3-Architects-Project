@@ -141,6 +141,75 @@ main {
     margin-bottom: 15px;
 }
 
+/* features styles  */
+
+.features {
+    margin-top: 100px;
+    display: flex;
+    gap: 40px;
+}
+
+.feature-content {
+    width: 50%;
+}
+
+.feature-image {
+    width: 50%;
+}
+
+.feature-content .features-title {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-description {
+    margin-bottom: 10px;
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+.feature-image img{
+    height: 85%;
+    margin-left: 30px;
+}
+
+.feature-content .card {
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.tenyear-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+}
+.tenyear-badge h2{
+    font-size: 3rem;
+}
+.tenyear-badge p{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
 /* responsive styles  */
 
 
@@ -151,7 +220,8 @@ main {
         padding: 20px;
     }
 
-    nav {
+    nav, 
+    .features {
         flex-direction: column;
 
     }
@@ -163,10 +233,11 @@ main {
     .banner-title {
         margin-top: 20px;
     }
+
     .teams-container {
         flex-direction: column-reverse;
-        /* align-items: center; */
     }
+
     .teams-content {
         width: 100%;
         padding: 20px;
@@ -178,6 +249,23 @@ main {
         grid-template-columns: 1fr;
         gap: 1.2rem;
         padding: 20px;
+    }
+
+    .feature-content {
+        width: 100%;
+        padding: 20px;
+    }
+    .feature-image{
+        width: 100%;
+        padding: 20px;
+    }
+    .feature-image img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .tenyear-badge{
+        width: 100%;
+        position: static;
     }
 
 
@@ -203,9 +291,11 @@ main {
     .banner-title {
         margin-top: 20px;
     }
+
     .teams-container {
         flex-direction: column-reverse;
     }
+
     .teams-content {
         width: 100%;
         padding: 20px;
@@ -217,5 +307,24 @@ main {
         grid-template-columns: 1fr;
         gap: 1.2rem;
         padding: 20px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .feature-content {
+        width: 100%;
+        padding: 20px;
+    }
+    .feature-image{
+        width: 100%;
+        padding: 20px;
+    }
+    .feature-image img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .tenyear-badge{
+        width: 100%;
+        position: static;
     }
 }
